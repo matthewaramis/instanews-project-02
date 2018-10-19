@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gulp SCSS ES6 Starter</title>
+  <title>Instanews - NYT News Reader</title>
   <!-- My Style, note you can use style.min.css for Production -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="./build/css/style.css">
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,14 +18,33 @@
 
 <body>
   <header>
-    <h1>Hello World</h1>
+    <div class="header-content">
+      <img class="nyt-logo" src="./build/css/images/nyt-logo.svg" alt="New York Times logo">
+      <p>Choose a section:</p>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Sections ... <i class="fas fa-sort"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">Arts</a>
+          <a href="#">Business</a>
+          <a href="#">Sports</a>
+          <a href="#">Technology</a>
+          <a href="#">Fashion</a>
+        </div>
+      </div>
+      <!-- https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+    </div>
   </header>
-  <main>
+  <section>
 
-  </main>
+  </section>
   <footer>
-    &copy; 2018
+    <p>&copy; Copyright 2018 INSTANEWS</p>
   </footer>
+  <!--JQuery link-->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/index.min.js" async defer></script> -->
 </body>
 
 </html>
