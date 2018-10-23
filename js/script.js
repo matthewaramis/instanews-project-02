@@ -1,8 +1,11 @@
 $(document).ready(function() {
   $('#select-options').on('change', function() {
     const section = $(this).val();
+    // $('header').addClass('shrink');
     event.preventDefault();
-    // $('.loading').append(<img src="./build/css/images/ajax-loader.gif">)
+    $('.loading').append(
+      '<img class="loading-gif" src="./images/ajax-loader.gif">'
+    );
 
     let url = 'https://api.nytimes.com/svc/topstories/v2/' + section + '.json';
     url +=
@@ -39,6 +42,10 @@ $(document).ready(function() {
       .fail(function() {
         $('.results').empty();
         $('.results').append('<p>Apologies, this page is not loading...</p>');
+      })
+
+      .always(function() {
+        $('.loading').empty();
       });
   });
 });

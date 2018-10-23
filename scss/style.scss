@@ -20,6 +20,18 @@ html {
   font-weight: 300;
   font-style: normal;
   box-sizing: border-box;
+  position: relative;
+  .loading {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  .loading-gif {
+    width: 2rem;
+  }
 }
 
 .header-content {
