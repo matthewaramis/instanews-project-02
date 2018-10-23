@@ -19,32 +19,30 @@
 <body>
   <header>
     <div class="header-content">
-      <img class="nyt-logo" src="./build/css/images/nyt-logo.svg" alt="New York Times logo">
-      <p>Choose a section:</p>
-      <select id="select-options">
-        <option value="sections">Sections ...</option>
-        <option value="home">Home</option>
-        <option value="arts">Arts</option>
-        <option value="business">Business</option>
-        <option value="sports">Sports</option>
-        <option value="technology">Technology</option>
-        <option value="fashion">Fashion</option>
-      </select>
+      <div class="display-logo">
+        <img class="nyt-logo" src="./images/nyt-logo.svg" alt="New York Times logo">
+      </div>
+      <div class="display-text">
+        <p>Choose a section:</p>
+        <select id="select-options">
+          <option value="sections">Sections ...</option>
+          <option value="home">Home</option>
+          <option value="arts">Arts</option>
+          <option value="business">Business</option>
+          <option value="sports">Sports</option>
+          <option value="technology">Technology</option>
+          <option value="fashion">Fashion</option>
+        </select>
+      </div>
     </div>
   </header>
   <section>
+    <p class="loading"></p>
     <div class="results"></div>
   </section>
   <footer>
     <p>&copy; Copyright 2018 INSTANEWS</p>
   </footer>
-
-  <script src="js/script.js"></script>
-
-  <!--JQuery link-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="js/index.min.js" async defer></script>
 </body>
 
 </html>

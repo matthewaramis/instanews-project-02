@@ -24,12 +24,40 @@ html {
 
 .header-content {
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 0.55rem;
+  }
+}
+
+.display-logo {
+  @include tablet {
+    flex-direction: row;
+    margin: 0;
+    padding-left: 100px;
+  }
+  @include desktop {
+    padding-left: 2rem;
+  }
+}
+
+.display-text {
+  @include tablet {
+    flex-direction: row;
+    margin: 0;
+    padding-left: 83px;
+  }
 }
 
 .nyt-logo {
   height: 159px;
   padding-bottom: 9px;
+  @include tablet {
+    height: 76px;
+  }
 }
 
 .header-content p {
@@ -37,13 +65,37 @@ html {
   padding-top: 3px;
   padding-bottom: 1rem;
   margin: 0;
-  //   text-align: center;
+  @include tablet {
+    font-size: 0.9rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  @include desktop {
+    font-size: 1rem;
+  }
 }
 
 select {
   padding: 2px 8px 2px 8px;
   font-weight: 550;
   font-size: 1rem;
+}
+
+select:focus {
+  outline: 0;
+}
+
+.results {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      width: 50%;
+      @include desktop {
+        width: 25%;
+      }
+    }
+  }
 }
 
 article {
@@ -57,11 +109,17 @@ article {
     position: absolute;
     bottom: 0;
     margin: 0;
+    color: white;
   }
 }
 
 footer {
   color: #c2c2c2;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1.05rem;
+  padding-bottom: 2.05rem;
+  font-size: 0.9rem;
+  @include desktop {
+    text-align: left;
+    padding-left: 2rem;
+  }
 }
