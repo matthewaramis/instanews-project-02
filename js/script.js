@@ -1,7 +1,10 @@
 $(document).ready(function() {
   $('#select-options').on('change', function() {
     const section = $(this).val();
-    // $('header').addClass('shrink');
+    $('.nyt-logo').addClass('change-logo');
+    $('.header-content').addClass('change-header');
+    $('.display-logo').addClass('change-display-logo');
+    $('.display-text').addClass('change-display-text');
     event.preventDefault();
     $('.loading').append(
       '<img class="loading-gif" src="./images/ajax-loader.gif">'

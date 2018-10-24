@@ -35,12 +35,21 @@ html {
 }
 
 .header-content {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 11rem;
+  padding-bottom: 9rem;
   @include tablet {
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding-bottom: 10.3rem;
+    padding-top: 222px;
+  }
+}
+
+.change-header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include tablet {
     padding-bottom: 0.55rem;
   }
 }
@@ -49,6 +58,15 @@ html {
   @include tablet {
     flex-direction: row;
     margin: 0;
+    padding-left: 214px;
+  }
+  @include desktop {
+    padding-left: 2rem;
+  }
+}
+
+.change-display-logo {
+  @include tablet {
     padding-left: 100px;
   }
   @include desktop {
@@ -60,13 +78,31 @@ html {
   @include tablet {
     flex-direction: row;
     margin: 0;
+    padding-left: 15px;
+    padding-top: 70px;
+  }
+  @include desktop {
+    padding-left: 95px;
+  }
+}
+
+.change-display-text {
+  @include tablet {
     padding-left: 83px;
+    padding-top: 0;
   }
 }
 
 .nyt-logo {
-  height: 159px;
+  height: 229px;
   padding-bottom: 9px;
+  @include tablet {
+    height: 230px;
+  }
+}
+
+.change-logo {
+  height: 159px;
   @include tablet {
     height: 76px;
   }
