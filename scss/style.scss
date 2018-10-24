@@ -127,6 +127,9 @@ select {
   padding: 2px 8px 2px 8px;
   font-weight: 550;
   font-size: 1rem;
+  &:focus {
+    outline: 0;
+  }
 }
 
 select:focus {
