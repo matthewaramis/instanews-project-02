@@ -9,3 +9,5 @@ ehthumbs.db
 *.Trashes
 # Ignore npm packages
 node_modules/
+# Ignore reference images
+/reference-images/*
